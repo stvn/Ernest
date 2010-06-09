@@ -9,6 +9,7 @@ Start by requiring the Ernest module. Path may need to be altered depending on l
 
 
 var ernest = require(‘geddy/geddy-core/scripts/ernest’);
+var assert = require('assert);
 
 Create an namespace (object-literal) to wrap your tests.
 
