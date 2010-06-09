@@ -1,38 +1,51 @@
-Ernest is a lightweight test runner for Node.js.  The project has evolved out of my participation with <a href='http://github.com/mde/geddy">geddy js, a web framework, also written for Node.js.
+
 
 Writing tests is simple an easy with Ernest!
 
 Example:
 
-Start by requiring the Ernest module.  Path may need to be altered depending on location of test files.
-<pre>
-var ernest = require('geddy/geddy-core/scripts/ernest');
-</pre>
+Start by requiring the Ernest module. Path may need to be altered depending on location of test files.
+
+
+
+var ernest = require(‘geddy/geddy-core/scripts/ernest’);
 
 Create an namespace (object-literal) to wrap your tests.
-<pre>
+
+
+
 var myTests = {
-  //preface each key with the word 'test'
+
+  //preface each key with the word ‘test’
+
   testThatSomethingWorks : function(){
-    var foo = 'bar';
-    //use Node's Assert module -- last parameter is fail message that is displayed. 
-    //By default, it uses what's predefined in Ernest
+
+    var foo = ‘bar’;
+
+    //use Node’s Assert module — last parameter is fail message that is displayed. 
+
+    //By default, it uses what’s predefined in Ernest
+
     assert.ok(foo, this.fail); 
-    assert.equal(foo, 'bar', this.fail);
+
+    assert.equal(foo, ‘bar’, this.fail);
+
   }
+
 };
-</pre>
 
 And, for the last bit, pass your new test to Ernest:
-<pre>
+
+
+
   ernest.execute(myTests);
-</pre>
 
-If you want tests to be run via 'make test' -- Save your tests in a directory called 'tests' in the module you're testing.
+If you want tests to be run via ‘make test’ — Save your tests in a directory called ‘tests’ in the module you’re testing.
 
-That's it!!! It's that easy!
+That’s it!!! It’s that easy!
 
 Tests can be run one of two ways:
 
-run all tests:  <code>make test</code>
-individual tests: <code>node path/to/test.js</code>
+run all tests: make test
+individual tests: node path/to/test.js
+
