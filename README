@@ -49,3 +49,5 @@ Tests can be run one of two ways:
 run all tests: make test
 individual tests: node path/to/test.js
 
+
+Additionally I've included an example of tests that are actively being used in Geddy (http://www.github.com/mde/geddy).
